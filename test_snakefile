@@ -1,7 +1,7 @@
 import itertools as it
 
 SAMPLE=["k562_reik_cat", "K562_nla_cat"]
-READS=["R1", "R2"]
+READS=["R2"]
 #WD="~/snakemake-tutorial/"
 PATH_BISMARK="/hpc/hub_oudenaarden/bin/software/bismark_v0.16.3"
 REF_GEN="/hpc/hub_oudenaarden/avo/BS/mm10"
