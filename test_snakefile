@@ -115,4 +115,4 @@ rule met_extraction:
       path2bowtie=PATH_BOWTIE
     threads: 4
     shell:
-        "{params.path2bismark}/bismark_methylation_extractor --samtools_path {params.path2samtools} -s --gzip --report --multicore {threads} --comprehensive --merge_non_CpG --bedGraph --cytosine_report -o ./met_extraction --genome_folder {input.refgen} {input.dedup_bam}"
+        "{params.path2bismark}/bismark_methylation_extractor --samtools_path {params.path2samtools} -s --gzip --report --multicore {threads} --comprehensive --merge_non_CpG --bedGraph -o ./met_extraction --genome_folder {input.refgen} {input.dedup_bam}"
