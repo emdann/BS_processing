@@ -108,7 +108,7 @@ rule met_extraction:
         refgen=REF_GEN
         #zip=expand("data/samples/{sample}_fastqc.zip",sample=SAMPLE)
     output:
-        met_extraction="met_extraction/{sample}_{read}_val_{read}_bismark_bt2.deduplicated.CpG_report.txt.gz"
+        met_extraction="met_extraction/{sample}_{read}_bismark_bt2.deduplicated.CpG_report.txt.gz"
     params:
       path2bismark=PATH_BISMARK,
       path2samtools=PATH_SAMTOOLS,
