@@ -10,7 +10,7 @@ PATH_SAMTOOLS="/hpc/hub_oudenaarden/bdebarbanson/bin/samtools-1.3.1"
 
 rule all:
     input:
-        # html=expand("fastqc/{sample}_{read}_fastqc.html",sample=SAMPLE, read=READS),
+        html=expand("fastqc/{sample}_{read}_fastqc.html",sample=SAMPLE, read=READS),
         dedup_bam=expand("bam/{sample}_{read}_val_{read}_bismark_bt2.deduplicated.bam", sample=SAMPLES, read=READS)
         # split_bam=expand("bam/{sample}_{read}_bismark_bt2.bam", sample=SAMPLE, read=READS)
         # bam1=expand("bam/{sample}_1_bismark_bt2.bam", sample=SAMPLE)
