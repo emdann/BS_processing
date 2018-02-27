@@ -1,7 +1,7 @@
 import itertools as it
 
 SAMPLES=["CG-abaBS-1000ES-3n1_lmerged"]
-READS=["R1","R2"]
+READS=["1","2"]
 #WD="~/snakemake-tutorial/"
 PATH_BISMARK="/hpc/hub_oudenaarden/bin/software/bismark_v0.16.3"
 REF_GEN="/hpc/hub_oudenaarden/avo/BS/mm10"
@@ -29,7 +29,7 @@ rule trim:
         fastq=expand("{{sample}}_{read}.fastq.gz", read=READS),
         # fastq2=expand("{sample}_2.fastq.gz", sample=SAMPLE)
     output:
-        trim=expand("trimmed_samples/{{sample}}_{read}_val_{read}.fq.gz", read=READS),
+        trim=expand("trimmed_samples/{{sample}}_R{read}_val_R{read}.fq.gz", read=READS),
     # params:
     # 	3clip="3"
     shell:
