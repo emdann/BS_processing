@@ -1,6 +1,6 @@
 import itertools as it
 
-SAMPLE=["CG-abaBS-1000ES-3n1_lmerged"]
+SAMPLES=["CG-abaBS-1000ES-3n1_lmerged"]
 READS=["R2"]
 #WD="~/snakemake-tutorial/"
 PATH_BISMARK="/hpc/hub_oudenaarden/bin/software/bismark_v0.16.3"
